@@ -23,12 +23,25 @@ public class atividadePratica1 {
 		int numero3;
 
 		System.out.println("Digite o primeiro numero: ");
-		// recebendo o primeiro número via teclado (entrada de dados, lendo um valor
-		// inteiro)
+		// recebendo o primeiro número via teclado (entrada de dados, lendo um valor inteiro)
 		numero1 = ler.nextInt();
-		
-		
+				
 		System.out.println("\nO numero digitado foi: " + numero1);
+
+		
+		System.out.println("Digite o segundo numero: ");
+		// recebendo o primeiro número via teclado (entrada de dados, lendo um valor inteiro)
+		numero2 = ler.nextInt();
+				
+		System.out.println("\nO numero digitado foi: " + numero2);
+
+		
+		System.out.println("Digite o terceiro numero: ");
+		// recebendo o primeiro número via teclado (entrada de dados, lendo um valor inteiro)
+		numero3 = ler.nextInt();
+				
+		System.out.println("\nO numero digitado foi: " + numero3);
+
 
 	}
 
