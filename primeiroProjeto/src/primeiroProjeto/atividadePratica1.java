@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class atividadePratica1 {
 
 	public static void main(String[] args) {
-
+		
 		/*
 		 * 01. Faça um programa que receba 3 números via teclado e imprima o maior
 		 * deles.
