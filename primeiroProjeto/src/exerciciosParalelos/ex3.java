@@ -21,7 +21,7 @@ public class ex3 {
 		saldo = ler.nextInt();
 
 		novoSaldo = saldo + (1 * saldo) / 100;
-		System.out.println("O saldo novo eh: " + novoSaldo);
+		System.out.println("O saldo novo, com reajuste de 1% eh: " + novoSaldo);
 
 	}
 

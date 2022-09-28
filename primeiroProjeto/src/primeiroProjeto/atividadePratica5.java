@@ -23,23 +23,36 @@ public class atividadePratica5 {
 		double saldo = 1000;
 		double debito;
 		double credito;
-		double saldoAtual = saldo - debito + credito;
 
-		System.out.println("\nDigite o numero da conta corrente: ");
+		System.out.println("\nDigite o numero da conta corrente sem o digito: ");
 		numeroConta = ler.next();
 
-		System.out.println("\nQual o dígito da conta corrente: ");
+		System.out.println("\nQual o digito da conta corrente: ");
 		digitoConta = ler.next();
 		
-		System.out.println("\nSeu saldo eh: " + saldo);
-		System.out.println("Debito: " + debito);
-		System.out.println("Credito: " + credito);
-		System.out.println("Saldo Atual: " + saldoAtual);
+		System.out.println("\n=============================");
+		System.out.println("=============================");
+
+		System.out.println("\nConta corrente numero: " + numeroConta + "-" + digitoConta);
+		System.out.println("\nSaldo em 27/09/2022: R$ " + saldo);
+		
+		System.out.println("\nDigite o valor que voce quer sacar: R$ ");
+		debito = ler.nextDouble();
+				
+		System.out.println("Digite o valor que voce quer depositar: R$ ");
+		credito = ler.nextDouble();
+		
+		System.out.println("\n=============================");
+		System.out.println("=============================");
+				
+		double saldoAtual = saldo - debito + credito;
+
+		System.out.println("\nSaldo atual em 28/09/2022: R$ " + saldoAtual);
 
 		if (saldoAtual >= 0) {
-			System.out.println("\nSaldo Positivo");
+			System.out.println("\n*** Saldo Positivo ***");
 		} else {
-			System.out.println("\nSaldo Negativo");
+			System.out.println("\n*** Saldo Negativo ***");
 		}
 
 	}

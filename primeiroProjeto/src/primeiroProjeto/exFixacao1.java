@@ -1,8 +1,8 @@
-package exerciciosParalelos;
+package primeiroProjeto;
 
 import java.util.Scanner;
 
-public class ex1 {
+public class exFixacao1 {
 
 	public static void main(String[] args) {
 
