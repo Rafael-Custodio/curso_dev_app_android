@@ -63,25 +63,30 @@ public class MainActivity extends AppCompatActivity {
         // convertendo o tipo int que vai receber o resultado para String, que vai mostrar na textView
         int credito111 = Integer.parseInt(credito11.getText().toString());
 
+        // criando e instanciando objeto
+        EditText saque11 = (EditText) findViewById(R.id.saque1);
+        // convertendo o tipo int que vai receber o resultado para String, que vai mostrar na textView
+        int saque111 = Integer.parseInt(saque11.getText().toString());
+
+        // criando e instanciando objeto
+        EditText saldo22 = (EditText) findViewById(R.id.saldo2);
+        // convertendo o tipo int que vai receber o resultado para String, que vai mostrar na textView
+        int saldo222 = Integer.parseInt(saldo22.getText().toString());
+
+        saldo222 = saldo111 + credito111 - saque111;
 
         // criando condicionamento
-        if (receberNome != null && receberSobrenome != null) {
+        if (saldo222 >= 0) {
             // criando e instanciando objeto
-            TextView texto1 = (TextView) findViewById(R.id.txt3);
-            texto1.setText("Olá, " + recebendoNome + " " + recebendoSobrenome + ", titular da conta-corrente: " + conta + "-" + digito);
+            TextView texto2 = (TextView) findViewById(R.id.txt4);
+            texto2.setText("Saldo Positivo = R$" + saldo222);
         }
 
         else {
-            TextView texto1 = (TextView) findViewById(R.id.txt3);
-            texto1.setText("ATENÇÃO: Digite seus dados acima.");
+            TextView texto2 = (TextView) findViewById(R.id.txt4);
+            texto2.setText("Saldo Negativo = R$" + saldo222);
         }
     }
-
-
-
-
-
-
-
-
 }
+
+
