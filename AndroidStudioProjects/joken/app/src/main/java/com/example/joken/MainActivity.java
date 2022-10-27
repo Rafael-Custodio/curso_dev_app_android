@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.SyncStatusObserver;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -38,25 +39,17 @@ public class MainActivity extends AppCompatActivity {
         //testando o clique dos botões
         //System.out.println("item que selecionei: " + escolhaUsuario);
 
-
         ImageView imagemResultado = findViewById(R.id.img_oponente);
         TextView textoResultado = findViewById(R.id.txt_resultado);
-
-        //criando objetos para contabilizar os pontos
-        //TextView contadorVitorias = findViewById(R.id.txt_vitoria);
-        //TextView contadorEmpate = findViewById(R.id.txt_empate);
-        //TextView contadorDerrotas = findViewById(R.id.txt_derrota);
 
         //criando objeto e posições do seu array
         int posicoes = new Random().nextInt(3);//0, 1, 2
         String[] opcoes = {"PEDRA", "PAPEL", "TESOURA"};
         String escolhaOponente = opcoes[posicoes];
 
+
         //testando a jogada do oponente (aleatório)
         //System.out.println("item que o oponente escolheu rendomicamente: " + escolhaOponente);
-
-        for (int i = 0)
-
 
         switch (escolhaOponente) {
             case "PEDRA":
@@ -71,7 +64,6 @@ public class MainActivity extends AppCompatActivity {
                 imagemResultado.setImageResource(R.drawable.img_tesoura);
                 break;
         }
-
 
         if (escolhaUsuario == "PEDRA" && escolhaOponente == "TESOURA" ||
                 escolhaUsuario == "PAPEL" && escolhaOponente == "PEDRA" ||

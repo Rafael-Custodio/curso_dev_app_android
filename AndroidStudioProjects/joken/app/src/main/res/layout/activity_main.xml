@@ -8,6 +8,24 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/txt_vitoria"
+        android:layout_width="97dp"
+        android:layout_height="31dp"
+        android:fontFamily="@font/anton"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#2FF337"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.964" />
+
+    <TextView
         android:id="@+id/txt_derrota1"
         android:layout_width="97dp"
         android:layout_height="31dp"
@@ -73,24 +91,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.91"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.964" />
-
-    <TextView
-        android:id="@+id/txt_vitoria"
-        android:layout_width="97dp"
-        android:layout_height="31dp"
-        android:fontFamily="@font/anton"
-        android:text="0"
-        android:textAlignment="center"
-        android:textColor="#2FF337"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:typeface="monospace"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.101"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.964" />
