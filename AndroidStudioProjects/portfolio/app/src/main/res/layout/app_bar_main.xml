@@ -29,8 +29,8 @@
         android:layout_gravity="bottom|end"
         android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="16dp"
-        app:srcCompat="@drawable/ic_whats"
-        app:tint="@color/Verde"
-        />
+        android:backgroundTint="#000000"
+        app:srcCompat="@drawable/ic_whatsapp"
+        app:tint="@color/Verde" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

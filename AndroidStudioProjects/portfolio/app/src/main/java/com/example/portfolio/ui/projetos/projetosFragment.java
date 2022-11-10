@@ -1,5 +1,6 @@
 package com.example.portfolio.ui.projetos;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,7 +8,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
+import com.example.portfolio.JokenPo;
 import com.example.portfolio.R;
 
 /**
@@ -63,4 +66,22 @@ public class projetosFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_projetos, container, false);
     }
+
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+
+        View joken = null;
+
+        joken = (ImageView) view.findViewById(R.id.img_icone);
+
+        joken.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), JokenPo.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+
 }
